@@ -4,7 +4,8 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 class LoginForm extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return 
+    Container(
       width: double.infinity,
       height: ScreenUtil.getInstance().setHeight(450),
       decoration: BoxDecoration(
@@ -36,12 +37,6 @@ class LoginForm extends StatelessWidget {
               SizedBox(
                 height: ScreenUtil.getInstance().setHeight(25),
               ),
-              // Text("Username",
-              //   style: TextStyle(
-              //     fontFamily: "Poppins-Medium",
-              //     fontSize: ScreenUtil.getInstance().setSp(26),
-              //   ),
-              // ),
               TextField(
                 decoration: InputDecoration(
                   hintText: "username",
@@ -54,12 +49,6 @@ class LoginForm extends StatelessWidget {
               SizedBox(
                 height: ScreenUtil.getInstance().setHeight(30),
               ),
-              // Text("Password",
-              //   style: TextStyle(
-              //     fontFamily: "Poppins-Medium",
-              //     fontSize: ScreenUtil.getInstance().setSp(26),
-              //   ),
-              // ),
               TextField(
                 obscureText: true,
                 decoration: InputDecoration(

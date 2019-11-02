@@ -1,14 +1,14 @@
+import 'package:flutter/material.dart';
 import 'dart:convert';
 import 'dart:developer';
-
-import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:http/http.dart' as http;
-import './main.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:url_launcher/url_launcher.dart';
+
+import './main.dart';
 import './register_page.dart';
-import './login2.dart';
+import './login.dart';
 
 class LoginPage extends StatefulWidget {
   @override
@@ -45,7 +45,7 @@ class _LoginPageState extends State<LoginPage> {
             Padding(padding: EdgeInsets.only(top: 20),),
             Center(
                child: new InkWell(
-                  child: new Text('login2'),
+                  child: new Text('login'),
                   onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context){ return Login();}))
               ),
             ),

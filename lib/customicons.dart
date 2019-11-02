@@ -8,3 +8,4 @@ class CustomIcons{
   static const IconData google = FontAwesomeIcons.google;
   static const IconData twittertwitter = IconData(0xe903,fontFamily: "CustomIcons");
 }
+
