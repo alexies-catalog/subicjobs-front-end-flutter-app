@@ -8,6 +8,7 @@ import './main.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:url_launcher/url_launcher.dart';
 import './register_page.dart';
+import './login2.dart';
 
 class LoginPage extends StatefulWidget {
   @override
@@ -39,6 +40,13 @@ class _LoginPageState extends State<LoginPage> {
                child: new InkWell(
                   child: new Text('Register'),
                   onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context){ return Register();}))
+              ),
+            ),
+            Padding(padding: EdgeInsets.only(top: 20),),
+            Center(
+               child: new InkWell(
+                  child: new Text('login2'),
+                  onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context){ return Login();}))
               ),
             ),
           ],
